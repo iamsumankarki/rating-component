@@ -104,7 +104,7 @@ body {
     cursor: pointer;
     font-size: 15px;
     letter-spacing: 2px;
-    padding: 15px;
+    padding: 13px 15px;
     transition: 300ms background-color ease-out, 300ms color ease-out;
     width: 100%;
 }
