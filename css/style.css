@@ -34,14 +34,15 @@ body {
 
 .review-card {
     border-radius: 30px;
-    background-color: var(--color-dark-blue);
+    background: var(--color-dark-blue);
+    background-image: radial-gradient(at top, var(--color-dark-blue), var(--color-very-dark-blue);
     color: var(--color-white);
     max-width: 410px;
     padding: 30px;
 }
 
 .get-rating > .image {
-    background-color: rgba(255, 255, 255, 0.04);
+    background-color: var(--color-dark-blue);
     border-radius: 50%;
     height: 50px;
     margin: 0 0 30px;
@@ -77,7 +78,7 @@ body {
 }
 
 .review-inputs label {
-    background-color: rgba(255, 255, 255, 0.04);
+    background-color: var(--color-dark-blue);
     border-radius: 50%;
     cursor: pointer;
     display: grid;
