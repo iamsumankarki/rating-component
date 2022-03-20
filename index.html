@@ -1,0 +1,71 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+  <title>Interactive rating component</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Overpass:ital,wght@0,400;0,700;1,400;1,700&display=swap"
+        rel="stylesheet">
+
+  <link rel="stylesheet" href="./css/style.css">
+</head>
+<body>
+<div id="main">
+  <section class="review-card">
+    <h2 class="hidden">don't show me</h2>
+
+    <div class="get-rating">
+      <div class="image">
+        <img src="./images/icon-star.svg" alt="star">
+      </div>
+      <div class="info">
+        <h3>How did we do?</h3>
+        <p>Please let us know how we did with your support request. All feedback is appreciated to help us improve our
+          offering!</p>
+      </div>
+      <form>
+        <div class="review-inputs">
+          <input type="radio" id="one" name="review-check" value="1" />
+          <label for="one">1</label>
+
+          <input type="radio" id="two" name="review-check" value="2" />
+          <label for="two">2</label>
+
+          <input type="radio" id="three" name="review-check" value="3" />
+          <label for="three">3</label>
+
+          <input type="radio" id="four" name="review-check" value="4" />
+          <label for="four">4</label>
+
+          <input type="radio" id="five" name="review-check" value="5" />
+          <label for="five">5</label>
+        </div>
+
+        <button class="submit" type="submit">SUBMIT</button>
+      </form>
+    </div>
+
+    <div class="rating-success hidden">
+      <div class="image">
+        <img src="./images/illustration-thank-you.svg" alt="thankyou" />
+      </div>
+
+      <p class="rated-text">You selected <span class="rating"></span> out of 5</p>
+
+      <div class="message">
+        <h3>Thank You!</h3>
+        <p>We appreciate you taking the time to give a rating. If you ever need more support, don't hesitate to get in
+          touch! </p>
+      </div>
+    </div>
+  </section>
+</div>
+
+<script src="./js/script.js"></script>
+</body>
+</html>

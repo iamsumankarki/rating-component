@@ -1,0 +1,154 @@
+:root {
+    --color-primary: #fb7413;
+    --color-white: #fff;
+    --color-light-grey: #959eac;
+    --color-medium-grey: #7c8798;
+    --color-dark-blue: #252d37;
+    --color-very-dark-blue: #121417;
+
+    --font-primary: "Overpass", sans-serif;
+}
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    font-family: var(--font-primary);
+    font-size: 15px;
+    margin: 0;
+    padding: 0;
+}
+
+#main {
+    background-color: var(--color-very-dark-blue);
+    display: grid;
+    height: 100vh;
+    padding: 0 15px;
+    place-content: center;
+}
+
+.hidden {
+    display: none;
+}
+
+.review-card {
+    border-radius: 30px;
+    background-color: var(--color-dark-blue);
+    color: var(--color-white);
+    max-width: 410px;
+    padding: 30px;
+}
+
+.get-rating > .image {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+    height: 50px;
+    margin: 0 0 30px;
+    display: grid;
+    place-content: center;
+    width: 50px;
+}
+
+.get-rating > .info {
+    margin: 0 0 30px;
+}
+
+.get-rating > .info > h3 {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.get-rating > .info > p {
+    color: var(--color-light-grey);
+    line-height: 1.5;
+    margin: 0 0;
+}
+
+.review-inputs {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 0 0 30px 0;
+    justify-content: space-between;
+}
+
+.review-inputs input[type="radio"] {
+    display: none;
+}
+
+.review-inputs label {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 50%;
+    cursor: pointer;
+    display: grid;
+    height: 50px;
+    place-content: center;
+    transition: 300ms background-color ease-out;
+    width: 50px;
+}
+
+.review-inputs input[type="radio"]:checked + label {
+    background-color: var(--color-light-grey);
+}
+
+.review-inputs label:hover {
+    background-color: var(--color-primary);
+}
+
+.submit {
+    background-color: var(--color-primary);
+    border: 0;
+    border-radius: 50px;
+    color: var(--color-white);
+    cursor: pointer;
+    font-size: 15px;
+    letter-spacing: 2px;
+    padding: 15px;
+    transition: 300ms background-color ease-out, 300ms color ease-out;
+    width: 100%;
+}
+
+.submit:hover {
+    background-color: var(--color-white);
+    color: var(--color-primary);
+}
+
+.rating-success {
+    padding: 15px 0 20px;
+    text-align: center;
+}
+
+.rating-success > .image {
+    margin: 0 0 30px;
+}
+
+.rated-text {
+    background-color: rgba(255, 255, 255, 0.04);
+    border-radius: 20px;
+    color: var(--color-primary);
+    max-width: max-content;
+    margin: 0 auto;
+    padding: 7px 17px 5px;
+}
+
+.rating-success > .message {
+    margin: 30px 5px 0;
+}
+
+.rating-success > .message > h3 {
+    font-size: 28px;
+    margin: 0 0 10px;
+}
+
+.rating-success > .message > p {
+    color: var(--color-light-grey);
+    line-height: 1.5;
+    margin: 0 0;
+}
+
+@media screen and (max-width: 576px) {
+    .review-card {
+        padding: 15px;
+        border-radius: 15px;
+    }
+}
